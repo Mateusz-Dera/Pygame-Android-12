@@ -1,2 +1,4 @@
 # Pygame-Android-12
-Buildozer Pygame project with Android 12 support
+Pygame buildozer project with android 12 support
+
+- Ubuntu 21.10
