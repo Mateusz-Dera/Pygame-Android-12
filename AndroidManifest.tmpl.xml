@@ -72,6 +72,7 @@
         <meta-data android:name="wakelock" android:value="{% if args.wakelock %}1{% else %}0{% endif %}"/>
 
         <activity android:name="{{args.android_entrypoint}}"
+                  android:resizeableActivity="false"
                   android:label="@string/app_name"
                   android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode{% if args.min_sdk_version >= 8 %}|uiMode{% endif %}{% if args.min_sdk_version >= 13 %}|screenSize|smallestScreenSize{% endif %}{% if args.min_sdk_version >= 17 %}|layoutDirection{% endif %}{% if args.min_sdk_version >= 24 %}|density{% endif %}"
                   android:screenOrientation="{{ args.orientation }}"
@@ -101,6 +102,7 @@
 
         {% if args.launcher %}
         <activity android:name="org.kivy.android.launcher.ProjectChooser"
+                  android:resizeableActivity="false"
                   android:icon="@mipmap/icon"
                   android:label="@string/app_name"
                   android:exported="true">
@@ -138,7 +140,7 @@
         </receiver>
         {% endif %}
     {% for a in args.add_activity  %}
-    <activity android:name="{{ a }}" android:exported="true"></activity>
+    <activity android:name="{{ a }}" android:exported="true" android:resizeableActivity="false"></activity>
     {% endfor %}
     </application>
 
