@@ -1,27 +1,31 @@
 # Pygame-Android-12
 ## Info:
-Pygame buildozer project template
-Tested on Ubuntu 21.10
-Default Android 12 (API 31)
+- Pygame project template
+- Android 12 __API 31__
+- Instalation script
+- Build & run script
+- Easy to modify __AndroidManifest.tmpl.xml__ file
+- Disabled app split screen 
+``` 
+android:resizeableActivity="false"
+```
+- Android adaptive __Material You__  icons
 
-## Installation
+## Installation:
+#### Ubuntu 21.10
 ```bash
 install.sh
 ```
 
-## Build & run project
+## Build & run:
+#### Ubuntu 21.10
 ```bash
 build.sh
 ```
 
-## Features
-- Instalation script
-- Build & run script
-- Separated AndroidManifest.tmpl.xml
-- android:exported="true"
-- Disabled split screen (android:resizeableActivity="false")
+## Issues:
+- Sometimes icon app color do not refresh, so install it from internal memory.
 
-## TODO
+## TODO:
 - Notch support
-- Android adaptive icons
 - Android 12 splash screen
