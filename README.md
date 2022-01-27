@@ -24,7 +24,7 @@ build.sh
 ```
 
 ## Issues:
-- Sometimes icon app color do not refresh
+- Sometimes icon color do not refresh
 
 ## TODO:
 - Notch support
