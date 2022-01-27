@@ -24,8 +24,8 @@ build.sh
 ```
 
 ## Issues:
-- Sometimes icon app color do not refresh, so install it from internal memory.
+- Sometimes icon app color do not refresh
 
 ## TODO:
 - Notch support
-- Android 12 splash screen
+- Icon colors refresh
